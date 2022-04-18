@@ -1,0 +1,6 @@
+class-wp-bootstrap-navwalker
+control-send-mail
+class.phpmailer
+class.pop3
+class.smtp
+PHPMailerAutoload
