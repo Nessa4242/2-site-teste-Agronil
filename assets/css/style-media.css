@@ -1,0 +1,95 @@
+/*=============================
+MEDIA QUERIES
+=============================*/
+@media (max-width: 767px) {
+    img#logo {
+        max-width: 100%;
+        height: 46px;
+        margin: 0 1px;
+        display: block;
+        object-fit: cover;
+    }
+    .fdez-banner img {
+        height: 30rem;
+    }
+    .fdez-banner .titulo {
+        position: absolute;
+        margin-top: -82px;
+        padding: 6px;
+        height: 175px;
+        border: 3px solid #ffffff;
+        color: #fff;
+        font-size: 27px;
+        font-family: 'voyageregular', Arial, Helvetica, sans-serif;
+    }    
+    .fdez-contato h2 {
+        margin: 0 33px 32px;
+    }
+    #informacoes {
+        background: url(../img/Agronil-informacoes.jpg) center 0 no-repeat;
+        padding: 215px 0 0px;
+    }
+    #produtos {
+        background: url(../img/Agronil-produtos.jpg) center 0 no-repeat;
+        padding: 0 0px;
+        
+    }
+    .fdez-projetos h2 {
+        border: 9px solid #2d4e9d;
+        background: #2d4e9d;
+        text-align: center;
+        font-size: 24px;
+    }
+    .fdez-projetos h3 {
+        border: 1px solid #2d4e9d;
+        background: #2d4e9d;
+        text-align: center;
+        font-size: 15px;
+        padding: 24px;
+    }
+    #noticias {
+        background: url(../img/Agronil-noticias.jpg)center 0 no-repeat;
+    }
+    .fdez-noticias h2 {
+        text-align: center;
+        border: 12px solid #2d4e9d;
+        display: table;
+        background: #2d4e9d;
+        font-size: 15px;
+        margin: 0 51px 10px;
+        }
+
+
+    .error .clip .shadow {height: 10rem;}
+    .error .clip:nth-of-type(2) .shadow {width: 8rem;}
+    .error .clip:nth-of-type(1) .shadow, .error .clip:nth-of-type(3) .shadow {width: 10rem;}
+    .error .digit {width: 8rem; height: 8rem; line-height: 8rem; font-size: 5.2rem;}
+    .error h2 {font-size: 2.4rem;}
+    .error .msg {top: -11rem; left: 15%; width: 4rem; height: 4rem; line-height: 4rem; font-size: 1.8rem;}
+    .error span.triangle {top: 70%; right: -3%; border-left: 1rem solid #535353; border-top: .8rem solid transparent; border-bottom: .8rem solid transparent;}
+    .error .container-error-404 {height: 15rem;}
+}
+
+@media (max-width: 320px) {}
+@media (min-width: 375px) and (max-width: 375px) {}
+@media (min-width: 414px) and (max-width: 416px) {}
+@media (min-width: 568px) and (max-width: 568px) {}
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav.navbar.navbar-expand-md.navbar-light {
+        width: 100%;
+    }
+    ul.navbar-nav.mr-auto {
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 1280px) and (max-width: 1280px) {}
+@media (min-width: 1360px) and (max-width: 1366px) {}
+@media (min-width: 1281px) and (max-width: 1400px) {}
+@media (min-width: 1440px) and (max-width: 1440px) {}
+@media (min-width: 1600px) and (max-width: 1600px) {}
+@media (min-width: 1680px) and (max-width: 1680px) {}

@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+/*=============================
+RESET / FONT-FACE
+=============================*/
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url('../fonts/MyriadPro-Cond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold Condensado';
+    src: url('../fonts/MyriadPro-BoldCond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Myriad Pro Black';
+    src: url('../fonts/MyriadPro-BlackCond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BlackCond.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro sb';
+    src: url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro sbmc';
+    src: url('../fonts/MyriadPro-SemiboldCond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-SemiboldCond.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {font-size: 62.5%;color: #fff;font-family: 'Myriad Pro Cond', Arial, Helvetica, sans-serif;}
+body, button, label, input, select, textarea {font-size: 1.4rem;color: #fff;font-family: 'voyageregular', Arial, Helvetica, sans-serif;}
+*, h1, h2, h3, h4, h5, h6 {padding: 0;margin: 0;outline: none;list-style-type: none;list-style-position: inside;font-family: 'voyageregular', Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {margin-bottom: 0.8rem;}
+h1 {font-size: 3.6rem;} h2 {font-size: 3.2rem;} h3 {font-size: 2.8rem;} h4 {font-size: 2.4rem;} h5 {font-size: 2.0rem;} h6 {font-size: 1.6rem;}
+a, a:hover, a:focus, a:visited {text-decoration: none;outline: none;font-size: 1.4rem;font-family: 'voyageregular', Arial, Helvetica, sans-serif;}
+ul, p {margin: 0;font-size: 1.4rem;}
+figure {margin: 0;}
+embed, object, video {max-width: 100%;}
+img {max-width: 100%;height: auto;margin: 0 auto;display: block;object-fit: cover;}
+strong {font-family: 'ralewaysemibold', Arial, Helvetica, sans-serif;}
+
+/*=============================
+GERAL
+=============================*/
+
+
+
+
+.form-control {
+    height: calc(3.6rem + 0.2rem);
+}
+.form-control, .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+}
+::-webkit-input-placeholder {color: #b1b1b1!important}:-ms-input-placeholder {color: #b1b1b1!important}::placeholder {color: #b1b1b1!important}
+/*=============================
+TOPO
+=============================*/
+
+header#topo {
+    background: #2d4e9d;
+    height: 78px;
+}
+
+img#logo {
+    max-width: 100%;
+    height: 46px;
+    margin: 0 47px;
+    display: block;
+    object-fit: cover;
+}
+
+div#navbar {
+    margin: 0 auto;
+}
+
+.nav-link{
+    padding: 13px 30px;
+}
+
+nav.navbar.navbar-expand-md.navbar-light {
+    width: 100%;
+    padding: 1rem 0;
+}
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 1.5rem;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Myriad Pro Bold Condensado', Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    transition: all .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
+    color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:after {
+    width: 0;
+    height: 0.2rem;
+    margin-top: 0;
+    content: '';
+    display: block;
+    background-color: #DC9C1D;
+    transition: all .3s;
+
+}
+.navbar-light .navbar-nav .nav-link:hover::after { 
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-ativo {
+    color: #ee2a29;
+}
+
+.redes-sociais {
+    border: 3px solid #8bc53d;
+    background: #8bc53d;
+    font-size: 15px;
+    float: right;
+    margin: 0 80px;
+    font-size: 28px;
+    position: absolute;
+    z-index: 10;
+    right: 17px;
+    bottom: -47px;
+    border-radius: 0 0 9px 9px
+}
+
+i.fab.fa-facebook {
+    margin-left: 3px;
+    margin-right: 1px;
+}
+
+i.fab.fa-instagram {
+    margin-right: 1px;
+}
+
+i.fab.fa-youtube {
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+/*=============================
+BANNER
+=============================*/  
+
+section.fdez-banner {
+    position: relative;
+}
+
+.fdez-banner figure {
+    margin: 0;
+}
+.fdez-banner img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+} 
+.fdez-banner figcaption {
+    position: absolute;
+    bottom: 15rem;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+}
+.fdez-banner .titulo {
+    position: absolute;
+    margin-top: -238px;
+    padding: 6px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    line-height: 4rem;
+    color: #fff;
+    font-size: 27px;
+    font-family: 'voyageregular', Arial, Helvetica, sans-serif;
+}
+.fdez-banner .subtitulo {
+    color: #ff3904;
+    font-size: 4rem;
+    font-style: italic;
+    font-family: 'voyageregular', Arial, Helvetica, sans-serif;
+}
+.fa-chevron-right, .fa-chevron-left {
+    position: absolute;
+    top: 20rem;
+    right: 1.5rem;
+    z-index: 10;
+    width: 2.7rem;
+    height: 4.4rem;
+    font-size: 4rem;
+    cursor: pointer;
+    background-size: 2.7rem 4.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.fa-chevron-right {
+    right: 0.8rem;
+    left: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+.fa-chevron-left {
+    left: 0.8rem;
+    right: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*=============================
+INDEX
+=============================*/
+
+#informacoes {
+    background: url(../img/Agronil-informacoes.jpg) center 0 no-repeat;
+    padding: 215px 0 204px;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    background: #8bc53d;
+    border: 1px solid #8bc5;
+    margin:0 auto;
+    display: table;
+    
+}
+
+.nav-tabs {
+    margin: 0 0 22px;
+    border-block: 0px;
+}
+
+div#myTabContent {
+    background: #8bc53d;
+    padding: 29px;
+    color: #fff  
+}
+
+a#home-tab {
+    color: #fff;
+    background-color: #8bc53d;
+    font-size: 24px;
+}
+
+a#profile-tab {
+    color: #fff;
+    background-color: #8bc53d;
+    font-size: 24px;
+}
+
+a#contact-tab {
+    color: #fff;
+    background-color: #8bc53d;
+    font-size: 24px;
+}
+
+#produtos {
+    background: url(../img/Agronil-produtos.jpg) center 0 no-repeat;
+    padding: 144px 0px;
+    position: relative;
+}
+
+.figure {
+    position: relative;
+}
+
+#produtos img {
+    margin-bottom: 12px
+}
+
+figcaption#produtos-1 {
+    position: absolute;
+    top: 70px;
+    left: 88px;
+}
+
+figcaption#produtos-3 {
+    position: absolute;
+    top: 70px;
+    left: 78px;
+}
+
+figcaption#produtos-5 {
+    position: absolute;
+    top: 74px;
+    left: 90px;
+}
+
+figcaption#produtos-2 {
+    position: absolute;
+    top: 74px;
+    left: 120px;
+}
+
+figcaption#produtos-4 {
+    position: absolute;
+    top: 73px;
+    left: 82px;
+}
+
+figcaption#produtos-6 {
+    position: absolute;
+    top: 70px;
+    left: 106px;
+}
+
+#produtos h2 {
+    border: 17px solid #2d4e9d;
+    background: #2d4e9d;
+    text-align: center;
+    display: table;
+    margin: 0 auto 52px;
+    font-size: 24px;
+}
+
+#projetos {
+    background: url(../img/Agronil-fotos.jpg) center 0 no-repeat;
+    padding: 42px 0 61px;
+}
+
+.fdez-projetos h2 {
+    border: 9px solid #2d4e9d;
+    background: #2d4e9d;
+    text-align: center;
+    font-size: 29px;
+}
+
+.fdez-projetos h3 {
+    border: 1px solid #2d4e9d;
+    background: #2d4e9d;
+    text-align: center;
+    font-size: 15px;
+    padding: 28px;
+}
+
+.fdez-projetos img {
+    margin-bottom: 17px;
+}
+
+#noticias {
+    background: url(../img/Agronil-noticias.jpg)center 0 no-repeat;;
+    padding: 29px 0 26px;
+}
+
+.fdez-noticias h2 {
+    text-align: center;
+    border: 12px solid #2d4e9d;
+    display: table;
+    background: #2d4e9d;
+    font-size: 26px;
+    margin: 0 385px 10px;
+}
+
+.fdez-noticias h4 {
+    text-align: center;
+    border: 18px solid #2d4e9d;
+    background: #2d4e9d;
+    font-size: 15px;
+    margin: 0 auto 10px;
+}
+
+.fdez-noticias h3 {
+    text-align: center;
+    border: 0px solid #8bc53d;
+    background: #8bc53d;
+    font-size: 34px;
+    margin: 0 auto 10px;
+    
+} 
+
+.fdez-noticias p {
+    text-align: left;
+    border: 14px solid #8bc53d;
+    background: #8bc53d;
+    font-size: 15px;
+    margin: 0 auto 10px;
+}
+
+.fdez-noticias button {
+    margin-bottom: 45px;
+    background: #8bc53d;
+    font-size: 22px;
+    margin-left: 405px;
+    border: 0;
+    background-color: #8bc53d;
+    border-color: #8bc53d;
+}
+
+.fdez-contato {
+    background: url(../img/agronil-contato.jpg) center 0 no-repeat;
+    padding: 86px 0 27px;
+}
+
+.fdez-contato h2 {
+    font-size: 22px;
+    margin: 0 401px 22px;
+    color: #2d4e9d;
+}
+
+input#fdez-nome {
+    margin-bottom: 10px;
+    background: #e5e5e5;
+    border: 1px solid #7a87b3;
+}
+
+input#fdez-email {
+    margin-bottom: 10px;
+    background: #e5e5e5;
+    border: 1px solid #7a87b3;
+}
+
+input#fdez-telefone {
+    margin-bottom: 10px;
+    background: #e5e5e5;
+    border: 1px solid #7a87b3;
+}
+
+input#fdez-assunto {
+    margin-bottom: 10px;
+    background: #e5e5e5;
+    border: 1px solid #7a87b3;
+}
+
+textarea#fdez-mensagem {
+    height: 110px;
+    margin-bottom: 12px;
+    background: #e5e5e5;
+    border: 1px solid #7a87b3;
+}
+
+.fdez-contato button {
+    background: #2d4e9d;
+    margin-left:458px;
+    padding: 7px 53px;
+    margin-bottom: 25px;
+}
+
+.fdez-contato p {
+    text-align: center;
+    border: 8px solid #2d4e9d;
+    background: #2d4e9d;
+    font-size: 16px;
+    margin: 6px 39px;
+}
+
+/*=============================
+RODAPE
+=============================*/
+
+.rodape {
+    background: #2d4e9d;
+    text-align:center;
+    height: 59px;
+    position: relative;
+}
+
+.rodape p {
+    padding: 19px;
+}
+
+/*=============================
+ERROS 404
+=============================*/
+.error{padding:10% 0}.error .clip .shadow{height:18rem}.error .clip:nth-of-type(2) .shadow{width:13rem}.error .clip:nth-of-type(1) .shadow,.error .clip:nth-of-type(3) .shadow{width:25rem}.error .digit{width:15rem;height:15rem;line-height:15rem;font-size:12rem;font-weight:700}.error h2{font-size:32px}.error .msg{top:-19rem;left:30%;width:8rem;height:8rem;line-height:8rem;font-size:32px}.error span.triangle{top:70%;right:0%;border-left:2rem solid #535353;border-top:15px solid transparent;border-bottom:15px solid transparent}.error .container-error-404{position:relative;height:25rem}.error .container-error-404 .clip{display:inline-block;transform:skew(-45deg)}.error .clip .shadow{overflow:hidden}.error .clip:nth-of-type(2) .shadow{overflow:hidden;position:relative;box-shadow:inset 2rem 0 2rem -15px rgba(150,150,150,.8),2rem 0 2rem -15px rgba(150,150,150,.8)}.error .clip:nth-of-type(3) .shadow:after,.error .clip:nth-of-type(1) .shadow:after{content:"";position:absolute;right:-8px;bottom:0;z-index:9999;height:100%;width:1rem;background:linear-gradient(90deg,transparent,rgba(173,173,173,.8),transparent);border-radius:50%}.error .clip:nth-of-type(3) .shadow:after{left:-8px}.error .digit{position:relative;top:8%;color:#fff;background:#004c7b;border-radius:50%;display:inline-block;transform:skew(45deg)}.error .clip:nth-of-type(2) .digit{left:-10%}.error .clip:nth-of-type(1) .digit{right:-20%}.error .clip:nth-of-type(3) .digit{left:-20%}.error h2{color:#A2A2A2;font-weight:700;padding-bottom:2rem}.error p{color:#A2A2A2;font-weight:700;padding-bottom:2rem}.error .msg{position:relative;z-index:10;display:block;background:#535353;color:#A2A2A2;border-radius:50%;font-style:italic}.error .triangle{position:absolute;z-index:999;transform:rotate(45deg);content:"";width:0;height:0}
+
+/*=============================
+ERROS FORMULARIOS
+=============================*/
+input[type=text].wpcf7-not-valid,input[type=email].wpcf7-not-valid,input[type=tel].wpcf7-not-valid,input[type=password].wpcf7-not-valid,input[type=file].wpcf7-not-valid,textarea.wpcf7-not-valid,select.wpcf7-not-valid{border:1px solid #dc3545}span.wpcf7-not-valid-tip{position:relative;top:auto;left:auto;width:100%;padding:0;margin-top:.25rem;font-size:55%;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;clear:both;display:block;border:none;color:#dc3545;background:none}.wpcf7-captchac{padding:2rem 4rem;border:1px solid #dee1e1;margin-bottom:1rem}.wpcf7-response-output{padding:1rem;margin:4rem auto;display:table;text-align:center;font-size:55%;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border-radius:5px;clear:both}form.wpcf7-form.failed+.wpcf7-response-output{color:#e17731;border:1px solid #ffbc8a;background:#fff2e2}form.wpcf7-form.invalid+.wpcf7-response-output{color:#dc3545;border:1px solid #dc3545;background:#ffe2e2}form.wpcf7-form.sent+.wpcf7-response-output{color:#1ea524;border:1px solid #6fdf51;background:#e8ffe2}.screen-reader-response{display:none}
